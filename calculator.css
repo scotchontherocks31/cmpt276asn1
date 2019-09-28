@@ -1,0 +1,109 @@
+/** CSS file for Asn1 **/
+
+h1 {
+    font-family: 'Gautami';
+    font-weight: lighter;
+}
+
+h2 {
+    color: #cc0000;
+}
+
+body {
+    background-color: #A6192E;
+    padding-left: 55px;
+    padding-right: 55px;
+}
+
+div.main_border {
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-top: 50px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+    background-color: white;
+}
+
+div.main_body {
+    width: 1043px;
+    background-color: #eff5f5;
+    padding: 15px;
+    padding-bottom: 55px;
+    border-radius: 3px;
+    border: 2px solid #e0ebeb;
+}
+
+th {
+    background-color: #e6e6e6;
+    text-align: left;
+}
+
+table,
+tr,
+td,
+th {
+    table-layout: fixed;
+    height: 30px;
+    width: 180px;
+    padding: 5px;
+    border: 2px solid;
+    border-color: #cccccc;
+    border-collapse: collapse;
+}
+
+td.per {
+    text-align: center;
+}
+
+input {
+    padding: 7px;
+    font-size: 10px;
+}
+
+input.num {
+    text-align: left;
+    width: 80px;
+}
+
+input.den {
+    text-align: left;
+    width: 80px;
+}
+
+input.activity,
+input.sname,
+input.weight {
+    display: table-cell;
+    width: 90%;
+}
+
+button {
+    color: white;
+    background-color: #B5111A;
+    border-style: hidden;
+    border-radius: 3px;
+    font-size: 13px;
+    text-align: center;
+    height: 30px;
+    width: 85px;
+    margin: 7px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+span.left_side {
+    float: left;
+}
+
+span.right_side {
+    float: right;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}

@@ -1,0 +1,87 @@
+<!--HTML file for Asn1-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf -8">
+    <title>Grade Calculator</title>
+    <link rel="stylesheet" href="calculator.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <link href="//db.onlinewebfonts.com/c/e62d85a3dc9d8815cacfc13ff5dea781?family=Gautami" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <script src="calculator.js" type="text/javascript"></script>
+    <div style="background-color: #3D3935">&nbsp;</div>
+    <div class="main_border">
+        <h1>Grade Calculator</h1>
+        <div class="main_body">
+            <h2>Activities</h2>
+            <p>Give grades to the numeric activities:</p>
+            <br>
+            <form id="main_form">
+                <table id="main_table">
+                    <tbody>
+                        <tr>
+                            <th>Name</th>
+                            <th>Short Name</th>
+                            <th>Weight</th>
+                            <th>Grade</th>
+                            <th>Percentage</th>
+                        </tr>
+                        <tr>
+                            <td><input class="activity" type="text" value="Activity 1" placeholder="Activity 1"></td>
+                            <td><input class="sname" type="text" value="A1" placeholder="A1"></td>
+                            <td><input id="a1_weight" class="weight" type="number"></td>
+                            <td><input id="a1_num" class="num" type="number" onkeydown="calculate()" onkeyup="calculate()"> / <input id="a1_denom" type="number" class="den" onkeydown="calculate()" onkeyup="calculate()"></td>
+                            <td id="percentage1" class="per" />
+                        </tr>
+                        <tr>
+                            <td><input class="activity" type="text" value="Activity 2" placeholder="Activity 2"></td>
+                            <td><input class="sname" type="text" value="A2" placeholder="A2"></td>
+                            <td><input id="a2_weight" class="weight" type="number"></td>
+                            <td><input id="a2_num" class="num" type="number" onkeydown="calculate()" onkeyup="calculate()"> / <input id="a2_denom" type="number" class="den" onkeydown="calculate()" onkeyup="calculate()"></td>
+                            <td id="percentage2" class="per" />
+                        </tr>
+                        <tr>
+                            <td><input class="activity" type="text" value="Activity 3" placeholder="Activity 3"></td>
+                            <td><input class="sname" type="text" value="A3" placeholder="A3"></td>
+                            <td><input id="a3_weight" class="weight" type="number"></td>
+                            <td><input id="a3_num" class="num" type="number" onkeydown="calculate()" onkeyup="calculate()"> / <input id="a3_denom" type="number" class="den" onkeydown="calculate()" onkeyup="calculate()"></td>
+                            <td id="percentage3" class="per" />
+                        </tr>
+                        <tr>
+                            <td><input class="activity" type="text" value="Activity 4" placeholder="Activity 4"></td>
+                            <td><input class="sname" type="text" value="A4" placeholder="A4"></td>
+                            <td><input id="a4_weight" class="weight" type="number"></td>
+                            <td><input id="a4_num" class="num" type="number" onkeydown="calculate()" onkeyup="calculate()"> / <input id="a4_denom" type="number" class="den" onkeydown="calculate()" onkeyup="calculate()"></td>
+                            <td id="percentage4" class="per" />
+                        </tr>
+                        <tr>
+                            <td><b style="color:#cc0000;">Result</b></td>
+                            <td />
+                            <td />
+                            <td />
+                            <td id="total_per" class="per" />
+                        </tr>
+                    </tbody>
+                </table>
+
+                <br>
+                <br>
+                <span class="right_side">
+            <button type="button" onclick="weighted()">WEIGHTED</button>
+            <button type="button" onclick="mean()">MEAN</button>
+        </span>
+                <span class="left_side">
+                        <button type="button" onclick="addRow()"> ADD </button>
+                        <button type="button" onclick="removeRow()"> DELETE </button>
+                        <button type="button" onclick="resetButton()"> RESET </button>
+        </span>
+            </form>
+        </div>
+    </div>
+    <div style="background-color: #3D3935">&nbsp;</div>
+</body>
+
+</html>
